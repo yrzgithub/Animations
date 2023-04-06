@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">NCC</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+    <string name="login">Login</string>
+    <string name="achievements">Achievements</string>
+    <string name="logout">Logout</string>
+    <string name="title_activity_login">LoginAct</string>
+    <string name="prompt_email">Email</string>
+    <string name="prompt_password">Password</string>
+    <string name="action_sign_in">Sign in or register</string>
+    <string name="action_sign_in_short">Sign in</string>
+    <string name="welcome">"Welcome !"</string>
+    <string name="invalid_username">Not a valid username</string>
+    <string name="invalid_password">Password must be >5 characters</string>
+    <string name="login_failed">"Login failed"</string>
+    <string name="enter_the_email">Enter the email</string>
+    <string name="todo">TODO</string>
+</resources>
