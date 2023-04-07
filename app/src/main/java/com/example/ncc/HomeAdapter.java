@@ -65,7 +65,7 @@ public class HomeAdapter extends BaseAdapter {
         ImageView img = view.findViewById(R.id.img);
         Glide.with(act.getApplicationContext()).load(url).into(img);
 
-        Animation animation = AnimationUtils.loadAnimation(act,R.anim.property_animator);
+        Animation animation = AnimationUtils.loadAnimation(act,R.anim.scale);
         img.setAnimation(animation);
 
         return view;

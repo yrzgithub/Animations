@@ -14,6 +14,6 @@
     <string name="invalid_username">Not a valid username</string>
     <string name="invalid_password">Password must be >5 characters</string>
     <string name="login_failed">"Login failed"</string>
-    <string name="enter_the_email">Enter the email</string>
+    <string name="enter_the_email">Enter the Username</string>
     <string name="todo">TODO</string>
 </resources>

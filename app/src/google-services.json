@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "439172004610",
+    "firebase_url": "https://nccapp-62042-default-rtdb.firebaseio.com",
+    "project_id": "nccapp-62042",
+    "storage_bucket": "nccapp-62042.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:439172004610:android:dcd06717a9c3b1d444201b",
+        "android_client_info": {
+          "package_name": "com.example.ncc"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "439172004610-fcsql08ko9t1sg5he9h51qr1tp1kb5vs.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXDh-wEmwq_cEgUk0bs4HW5pMQr9-jqzw"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "439172004610-fcsql08ko9t1sg5he9h51qr1tp1kb5vs.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

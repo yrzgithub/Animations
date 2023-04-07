@@ -5,6 +5,8 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:id="@+id/login_layout"
+    android:background="@drawable/flag"
     android:gravity="center"
     tools:context=".LoginActivity">
 
@@ -17,7 +19,7 @@
             android:id="@+id/username"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:autofillHints="username"
@@ -28,10 +30,11 @@
             android:id="@+id/password"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:layout_weight="1"
+            android:layout_weight="2"
             android:layout_marginLeft="20dp"
             android:layout_marginRight="20dp"
             android:autofillHints="username"
+            android:inputType="numberPassword"
             android:hint="Enter the Password"
             android:gravity="center"/>
 
@@ -49,9 +52,9 @@
                 android:background="#0B30FF"
                 android:textColor="@color/white"
                 android:textSize="15sp"
-                android:padding="8dp"
+                android:padding="5dp"
                 android:clickable="true"
-                android:layout_marginRight="20dp"
+                android:layout_marginRight="25dp"
                 android:text="Register"/>
 
             <Button
@@ -60,7 +63,7 @@
                 android:layout_height="wrap_content"
                 android:background="#0B30FF"
                 android:textColor="@color/white"
-                android:layout_marginLeft="20dp"
+                android:layout_marginLeft="25dp"
                 android:clickable="true"
                 android:textSize="15sp"
                 android:text="login"/>

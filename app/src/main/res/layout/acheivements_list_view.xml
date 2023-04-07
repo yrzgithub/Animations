@@ -8,111 +8,134 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:src="@drawable/login"
+        android:layout_margin="5dp"
         android:id="@+id/image"/>
 
-    <LinearLayout
+    <GridLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="5dp"
-        android:layout_gravity="center">
+        android:rowCount="5"
+        android:layout_margin="10dp"
+        android:columnCount="2">
 
         <TextView
             android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"
+            android:layout_height="0dp"
+            android:padding="5dp"
             android:textColor="@color/black"
-            android:layout_weight="1"
+            android:layout_row="0"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
             android:text="Name" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="2"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="5dp"
-        android:layout_gravity="center">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"
+            android:layout_row="0"
+            android:padding="5dp"
+            android:layout_column="1"
+            android:textAlignment="textStart"
             android:textColor="@color/black"
-            android:layout_weight="1"
-            android:text="Std" />
+            android:layout_columnWeight="3"
+            android:layout_rowWeight="1"
+            android:id="@+id/name"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="2"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="5dp"
-        android:layout_gravity="center">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:padding="5dp"
             android:textColor="@color/black"
-            android:layout_weight="1"
-            android:text="Sec" />
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:text="Dept" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="2"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="5dp"
-        android:layout_gravity="center">
-
-        <TextView
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:textSize="18sp"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:padding="5dp"
+            android:layout_rowWeight="1"
             android:textColor="@color/black"
-            android:layout_weight="1"
-            android:text="Acheivement" />
+            android:id="@+id/dept"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="2"/>
-
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:padding="5dp"
-        android:layout_gravity="center">
+            android:textColor="@color/black"
+            android:layout_row="2"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:padding="5dp"
+            android:layout_column="0"
+            android:text="Year" />
 
         <TextView
-            android:layout_width="0dp"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textSize="18sp"
             android:textColor="@color/black"
-            android:layout_weight="1"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:padding="5dp"
+            android:id="@+id/year"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_columnWeight="1"
+            android:padding="5dp"
+            android:layout_rowWeight="1"
+            android:text="Work" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:textColor="@color/black"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:padding="5dp"
+            android:id="@+id/achievement"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/black"
+            android:layout_row="4"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:padding="5dp"
+            android:layout_column="0"
             android:text="Medals" />
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="2"/>
+            android:layout_row="4"
+            android:layout_column="1"
+            android:layout_columnWeight="1"
+            android:layout_rowWeight="1"
+            android:textColor="@color/black"
+            android:padding="5dp"
+            android:id="@+id/medals"/>
 
-    </LinearLayout>
+    </GridLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginEnd="5dp"
+        android:background="#5A5959"/>
 
 </LinearLayout>
