@@ -23,6 +23,7 @@ import com.google.android.material.snackbar.Snackbar;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 
+import java.util.HashMap;
 import java.util.Map;
 
 public class LoginActivity extends AppCompatActivity {
@@ -56,7 +57,15 @@ public class LoginActivity extends AppCompatActivity {
         login = findViewById(R.id.login);
         signin = findViewById(R.id.signin);
 
-        Map<PyObject,PyObject> users = map.asMap();
+        Map<PyObject,PyObject> users;
+
+        if(map==null)
+        {
+            users = new HashMap<PyObject,PyObject>();
+            Snackbar.make(layout,"You're offline",Snackbar.LENGTH_LONG).show();
+        }
+
+        else users = map.asMap();
 
         login.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -159,6 +168,7 @@ public class LoginActivity extends AppCompatActivity {
                                                                             }
                                                                             else {
                                                                                 database.getReference("users/"+user).setValue(passwords);
+                                                                                users.put(PyObject.fromJava(user),PyObject.fromJava(passwords));
                                                                                 startActivity(new Intent(LoginActivity.this,MainActivity.class));
                                                                             }
                                                                         }

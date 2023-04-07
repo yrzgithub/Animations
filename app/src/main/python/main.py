@@ -34,7 +34,7 @@ def users():
 def send_mail(email_id):
     admin_mail = "harini2023project@gmail.com"
     admin_password = "fundowawfgiguhvq"
-    code = randint(10**6,10**7-1)
+    code = randint(10**5,10**6-1)
     email = EmailMessage()
     email["From"] = admin_mail
     email["To"] = email_id
